@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-logo">MY PORTFOLIO</div>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="hamburger">
+      &#9776;
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-mask">
+      <img src="dalli-mask.png" alt="Dali Mask">
+    </div>
+    <h1>Hi, I'm <span>[Your Name]</span></h1>
+    <p>BCA Student &nbsp;·&nbsp; AI & Machine Learning &nbsp;·&nbsp; Delhi, India</p>
+    <a class="hero-btn" href="#projects">My Projects</a>
+    <a class="hero-btn outline" href="#contact">Contact Me</a>
+  </section>
+
+  <hr />
+
+  <!-- ABOUT -->
+  <div class="section-alt">
+    <div class="section" id="about">
+      <h2>About Me</h2>
+      <div class="section-line"></div>
+      <div class="about-grid">
+        <div class="about-card">
+          <p>Name &nbsp;&nbsp;&nbsp; <strong>[Your Name]</strong></p>
+          <p>Course &nbsp; <strong>BCA — AI & ML</strong></p>
+          <p>City &nbsp;&nbsp;&nbsp;&nbsp; <strong>Delhi, India</strong></p>
+          <p>Status &nbsp; <strong style="color:#e74c3c;">Open to Work</strong></p>
+        </div>
+        <div class="about-text">
+          <p>Hello! I am a BCA student specializing in Artificial Intelligence and Machine Learning. I enjoy learning
+            how things work and building small projects in my free time.</p>
+          <p>I made this website as my end term Web Design project using HTML, CSS, and JavaScript. The theme is
+            inspired by Money Heist — one of my favourite shows. Just like The Professor always has a plan, I try to
+            plan my code before writing it.</p>
+          <p>I am still learning but I enjoy the process of figuring things out.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- SKILLS -->
+  <div class="section" id="skills">
+    <h2>My Skills</h2>
+    <div class="section-line"></div>
+    <p>Technologies I have been learning during my BCA course:</p>
+    <br />
+    <div class="skill-item">
+      <div class="skill-label">Python <span>80%</span></div>
+      <div class="bar-bg">
+        <div class="bar-fill" style="width:80%"></div>
+      </div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-label">HTML & CSS <span>75%</span></div>
+      <div class="bar-bg">
+        <div class="bar-fill" style="width:75%"></div>
+      </div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-label">JavaScript <span>60%</span></div>
+      <div class="bar-bg">
+        <div class="bar-fill" style="width:60%"></div>
+      </div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-label">Machine Learning <span>55%</span></div>
+      <div class="bar-bg">
+        <div class="bar-fill" style="width:55%"></div>
+      </div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-label">Linux & CLI <span>65%</span></div>
+      <div class="bar-bg">
+        <div class="bar-fill" style="width:65%"></div>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- PROJECTS -->
+  <div class="section-alt">
+    <div class="section" id="projects">
+      <h2>My Projects</h2>
+      <div class="section-line"></div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>Grade Calculator</h3>
+          <p>A Python program that takes student marks as input and calculates their grade. Built using basic Python
+            logic and conditionals.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Logic</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>To-Do List App</h3>
+          <p>A simple to-do list website where you can add tasks and mark them done. Data is saved using localStorage so
+            it stays after refresh.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>This Portfolio</h3>
+          <p>The website you are viewing right now! Built as my end term web design project using HTML5, CSS3, and
+            JavaScript.</p>
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- CANVAS -->
+  <div class="section" id="canvas-section">
+    <h2>HTML Canvas</h2>
+    <div class="section-line"></div>
+    <p>HTML5 has a <strong style="color:#e74c3c;">&lt;canvas&gt;</strong> element that lets us draw shapes and graphics
+      using JavaScript. Below I drew a simple Money Heist mask using the Canvas 2D API:</p>
+    <br />
+    <canvas id="myCanvas" width="500" height="220"></canvas>
+    <p style="font-size:13px; color:#666; margin-top:8px;">Drawn with ctx.arc(), ctx.fillRect(), ctx.fillText() — no
+      images used.</p>
+  </div>
+
+  <hr />
+
+  <!-- MEDIA -->
+  <div class="section-alt">
+    <div class="section" id="media">
+      <h2>Media — Video, Audio & YouTube</h2>
+      <div class="section-line"></div>
+      <p>HTML5 added native support for video and audio — no plugins like Flash needed anymore.</p>
+      <br />
+      <div class="media-grid">
+        <div class="media-box">
+          <p style="color:#e74c3c; margin-bottom:8px; font-size:14px; font-weight:700;">HTML5 Video</p>
+          <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p>Using the &lt;video&gt; tag with the controls attribute.</p>
+        </div>
+        <div class="media-box">
+          <p style="color:#e74c3c; margin-bottom:8px; font-size:14px; font-weight:700;">HTML5 Audio</p>
+          <audio controls style="margin-bottom:12px;">
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+            Your browser does not support the audio tag.
+          </audio>
+          <p style="margin-bottom:16px;">Using the &lt;audio&gt; tag with two source formats.</p>
+          <p style="color:#e74c3c; margin-bottom:8px; font-size:14px; font-weight:700;">YouTube Embed</p>
+          <div class="yt-wrap">
+            <iframe src="https://www.youtube.com/embed/RArR1WNWN8Y" title="Money Heist Theme" allowfullscreen></iframe>
+          </div>
+          <p>Embedded using an &lt;iframe&gt; tag.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- DRAG AND DROP -->
+  <div class="section" id="dragdrop">
+    <h2>Drag & Drop API</h2>
+    <div class="section-line"></div>
+    <p>HTML5 has a built-in Drag and Drop API. Drag the Money Heist characters below to reorder them:</p>
+    <br />
+    <div class="drag-list" id="drag-list">
+      <div class="drag-item" draggable="true">⩥ &nbsp; The Professor</div>
+      <div class="drag-item" draggable="true">⩥ &nbsp; Berlin</div>
+      <div class="drag-item" draggable="true">⩥ &nbsp; Tokyo</div>
+      <div class="drag-item" draggable="true">⩥ &nbsp; Nairobi</div>
+      <div class="drag-item" draggable="true">⩥ &nbsp; Rio</div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- GEOLOCATION -->
+  <div class="section-alt">
+    <div class="section" id="geo">
+      <h2>Geolocation API</h2>
+      <div class="section-line"></div>
+      <p>HTML5 provides a Geolocation API through the browser. It finds your current device location with your
+        permission. Click the button to try:</p>
+      <br />
+      <button class="btn" onclick="getLocation()">Get My Location</button>
+      <div id="geo-result"></div>
+    </div>
+  </div>
+
+  <hr />
+
+
+  <!-- CONTACT -->
+  <!-- <div class="section-alt"> -->
+  <div class="section" id="contact">
+    <h2>Contact Me</h2>
+    <div class="section-line"></div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>⩥ &nbsp; <strong>[your@email.com]</strong></p>
+        <p>↪ &nbsp; <strong>Delhi, India</strong></p>
+        <p>⨁ &nbsp; <strong>BCA AI/ML</strong></p>
+        <p>Ŵ &nbsp; <strong style="color:#e74c3c;">Open to Work</strong></p>
+      </div>
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <div>
+          <label for="c-name">Your Name:</label>
+          <input type="text" id="c-name" placeholder="Enter your name" required />
+        </div>
+        <div>
+          <label for="c-email">Your Email:</label>
+          <input type="email" id="c-email" placeholder="Enter your email" required />
+        </div>
+        <div>
+          <label for="c-reason">Reason:</label>
+          <select id="c-reason">
+            <option value="">-- Select --</option>
+            <option>Project Collaboration</option>
+            <option>Freelance Work</option>
+            <option>Just Saying Hi</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="c-msg">Message:</label>
+          <textarea id="c-msg" placeholder="Write your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="form-success">✅ Message sent! Thank you.</p>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <h3>MY PORTFOLIO</h3>
+        <p>
+          BCA Student specializing in Artificial Intelligence
+          and Machine Learning. Passionate about coding,
+          problem solving, and creating innovative projects.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: your@email.com</p>
+        <p>Location: Delhi, India</p>
+        <p>Status: Open to Work</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 My Portfolio | Designed & Developed by [Your Name]
+    </div>
+  </footer>
+
+
+  <script>
+
+    // =============================================
+    // CANVAS — Drawing a Dali mask using shapes
+    // =============================================
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    // background
+    ctx.fillStyle = "#1a0000";
+    ctx.fillRect(0, 0, 500, 220);
+
+    // face circle
+    ctx.beginPath();
+    ctx.arc(250, 110, 75, 0, Math.PI * 2);
+    ctx.fillStyle = "#c0392b";
+    ctx.fill();
+
+    // left eye
+    ctx.beginPath();
+    ctx.arc(225, 95, 10, 0, Math.PI * 2);
+    ctx.fillStyle = "#1a0000";
+    ctx.fill();
+
+    // right eye
+    ctx.beginPath();
+    ctx.arc(275, 95, 10, 0, Math.PI * 2);
+    ctx.fillStyle = "#1a0000";
+    ctx.fill();
+
+    // smile
+    ctx.beginPath();
+    ctx.arc(250, 110, 35, 0.2, Math.PI - 0.2);
+    ctx.strokeStyle = "#1a0000";
+    ctx.lineWidth = 3;
+    ctx.stroke();
+
+    // text label
+    ctx.font = "15px Arial";
+    ctx.fillStyle = "#ffcccc";
+    ctx.textAlign = "center";
+    ctx.fillText("La Casa de Papel — HTML5 Canvas Demo", 250, 200);
+
+
+    // =============================================
+    // DRAG AND DROP
+    // =============================================
+    var dragSrc = null;
+
+    document.querySelectorAll(".drag-item").forEach(function (item) {
+
+      item.addEventListener("dragstart", function () {
+        dragSrc = this;
+        this.style.opacity = "0.5";
+      });
+
+      item.addEventListener("dragend", function () {
+        this.style.opacity = "1";
+        document.querySelectorAll(".drag-item").forEach(function (i) {
+          i.classList.remove("drag-over");
+        });
+      });
+
+      item.addEventListener("dragover", function (e) {
+        e.preventDefault();
+        this.classList.add("drag-over");
+      });
+
+      item.addEventListener("dragleave", function () {
+        this.classList.remove("drag-over");
+      });
+
+      item.addEventListener("drop", function (e) {
+        e.preventDefault();
+        if (dragSrc !== this) {
+          var temp = dragSrc.innerHTML;
+          dragSrc.innerHTML = this.innerHTML;
+          this.innerHTML = temp;
+        }
+        this.classList.remove("drag-over");
+      });
+
+    });
+
+
+    // =============================================
+    // GEOLOCATION API
+    // =============================================
+    function getLocation() {
+      var result = document.getElementById("geo-result");
+
+      if (navigator.geolocation) {
+        result.innerHTML = "Fetching location...";
+        navigator.geolocation.getCurrentPosition(
+          function (pos) {
+            result.innerHTML =
+              "Latitude: " + pos.coords.latitude + "<br>" +
+              "Longitude: " + pos.coords.longitude + "<br>" +
+              "Accuracy: ±" + Math.round(pos.coords.accuracy) + " meters";
+          },
+          function () {
+            result.innerHTML = "Permission denied or location unavailable.";
+          }
+        );
+      } else {
+        result.innerHTML = "Geolocation not supported by this browser.";
+      }
+    }
+
+
+    // =============================================
+    // WEB STORAGE — localStorage
+    // =============================================
+    function saveData() {
+      var val = document.getElementById("store-input").value;
+      if (val.trim() === "") {
+        document.getElementById("store-output").innerHTML = "Please type something first.";
+        return;
+      }
+      localStorage.setItem("portfolioData", val);
+      document.getElementById("store-output").innerHTML = "Saved → " + val;
+    }
+
+    function loadData() {
+      var val = localStorage.getItem("portfolioData");
+      if (val) {
+        document.getElementById("store-output").innerHTML = "Loaded → " + val;
+      } else {
+        document.getElementById("store-output").innerHTML = "Nothing saved yet.";
+      }
+    }
+
+    function clearData() {
+      localStorage.removeItem("portfolioData");
+      document.getElementById("store-output").innerHTML = "Cleared.";
+    }
+
+
+    // =============================================
+    // CONTACT FORM
+    // =============================================
+    function submitForm(e) {
+      e.preventDefault();
+      document.getElementById("form-success").style.display = "block";
+      e.target.reset();
+    }
+
+  </script>
+
+</body>
+
+</html>
