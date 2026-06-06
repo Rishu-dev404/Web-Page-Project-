@@ -104,35 +104,6 @@
       }
     }
 
-
-    // =============================================
-    // WEB STORAGE — localStorage
-    // =============================================
-    function saveData() {
-      var val = document.getElementById("store-input").value;
-      if (val.trim() === "") {
-        document.getElementById("store-output").innerHTML = "Please type something first.";
-        return;
-      }
-      localStorage.setItem("portfolioData", val);
-      document.getElementById("store-output").innerHTML = "Saved → " + val;
-    }
-
-    function loadData() {
-      var val = localStorage.getItem("portfolioData");
-      if (val) {
-        document.getElementById("store-output").innerHTML = "Loaded → " + val;
-      } else {
-        document.getElementById("store-output").innerHTML = "Nothing saved yet.";
-      }
-    }
-
-    function clearData() {
-      localStorage.removeItem("portfolioData");
-      document.getElementById("store-output").innerHTML = "Cleared.";
-    }
-
-
     // =============================================
     // CONTACT FORM
     // =============================================
